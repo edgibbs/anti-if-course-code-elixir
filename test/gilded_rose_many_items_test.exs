@@ -20,9 +20,9 @@ defmodule GildedRoseManyItemsTest do
         %Item{name: "Sulfuras, Hand of Ragnaros", sell_in: -1, quality: 80},
         %Item{name: "Backstage passes to a TAFKAL80ETC concert", sell_in: 15, quality: 20},
         %Item{name: "Backstage passes to a TAFKAL80ETC concert", sell_in: 10, quality: 49},
-        %Item{name: "Backstage passes to a TAFKAL80ETC concert", sell_in: 5, quality: 49}
+        %Item{name: "Backstage passes to a TAFKAL80ETC concert", sell_in: 5, quality: 49},
         # This Conjured item does not work properly yet
-        # %Item{name: "Conjured Mana Cake", sell_in: 3, quality: 6},
+        %Item{name: "Conjured Mana Cake", sell_in: 3, quality: 6}
       ]
 
       number_of_items = Enum.count(items)
@@ -46,7 +46,8 @@ defmodule GildedRoseManyItemsTest do
                "Sulfuras, Hand of Ragnaros -1 80",
                "Backstage passes to a TAFKAL80ETC concert 14 21",
                "Backstage passes to a TAFKAL80ETC concert 9 50",
-               "Backstage passes to a TAFKAL80ETC concert 4 50"
+               "Backstage passes to a TAFKAL80ETC concert 4 50",
+               "Conjured Mana Cake 2 5"
              ]
 
       # Day 3
@@ -64,7 +65,8 @@ defmodule GildedRoseManyItemsTest do
                "Sulfuras, Hand of Ragnaros -1 80",
                "Backstage passes to a TAFKAL80ETC concert 13 22",
                "Backstage passes to a TAFKAL80ETC concert 8 50",
-               "Backstage passes to a TAFKAL80ETC concert 3 50"
+               "Backstage passes to a TAFKAL80ETC concert 3 50",
+               "Conjured Mana Cake 1 4"
              ]
     end
   end
